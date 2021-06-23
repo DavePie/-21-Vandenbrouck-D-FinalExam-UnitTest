@@ -1,0 +1,3 @@
+1) Create tests that expect an Illegal Argument Exception and use String Calculator on negative numbers.
+2) Create tests that use numbers larger or equal than 1000 and assert that these numbers are not included.
+3) Implement the changes, testing along the way
