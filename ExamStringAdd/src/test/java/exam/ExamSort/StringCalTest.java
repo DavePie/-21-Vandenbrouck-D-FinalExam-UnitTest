@@ -25,4 +25,9 @@ public class StringCalTest {
 	public void largeNumberMultiple() {
 		assertEquals(7, StringCalculator.add("1003,1000,3,1000,4,43443"));
 	}
+
+	@Test
+	public void verylargeNumberSingle() {
+		assertEquals(403, StringCalculator.add("1000000000000000000000000,403"));
+	}
 }

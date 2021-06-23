@@ -6,10 +6,10 @@ public class StringCalculator {
 		String[] numbersArray = numbers.split(",|\n");
 		for (String number : numbersArray) {
 			if (!number.trim().isEmpty()) {
-				int curInt = Integer.parseInt(number.trim());
-				if (curInt >= 1000) {
+				if (number.trim().length() > 3) {
 					continue;
 				}
+				int curInt = Integer.parseInt(number.trim());
 				if (curInt < 0) {
 					throw new IllegalArgumentException("Negative Numbers are not allowed.");
 				}
